@@ -21,34 +21,21 @@
         <ul class="nav navbar-nav navbar-right">
           <% if logged_in? %>
             
-              
-            
-            <li>
-              <%= link_to logout_path, method: :delete do %>
-                <%= image_tag "logout.png" %>
-              <% end %>
-            </li>
-          <% else %>
-            
-            <li>
-              <%= link_to login_path do %>
-                <%= image_tag "login.png" %>
-              <% end %>
-            </li>
-          <% end %>
-          
-          <%= link_to histories_path do %>
+              <%= link_to histories_path do %>
                 <%= image_tag "tabaco.jpg",class: "path-btn" %>
               <% end %>
               
            <%= link_to histories_index_path do %>
                 <%= image_tag "list.png",class:"path-btn" %>
               <% end %>
-              
-          
             
-           
-          
+            <li>
+              <%= link_to logout_path, method: :delete do %>
+                <%= image_tag "logout.png" %>
+              <% end %>
+            </li>
+         
+        <% end %>
           
         
         </ul>

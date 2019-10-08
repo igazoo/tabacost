@@ -38,7 +38,6 @@ gem 'bootstrap-sass'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -69,3 +68,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "jquery-rails"
 gem 'bcrypt'
+gem "chartkick"
+
+gem 'chartable'
+

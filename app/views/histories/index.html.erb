@@ -1,11 +1,17 @@
 
 <div class="histories-index">
-<% @histories.each do |history| %>
-  <p><%= history.tabaco.id  %></p>
-  <p><%= history.brand %></p>
-  <p><%= history.price %></p>
-  <p><%= history.volume %></p>
-<% end %>
-
+  <div class="data">
+      <h5>Data Report</h5>
+  </div>
+    
+  <div class="graf">
+    <%= column_chart @chart1 %>
+    Week
+  </div>
+  <div class="graf">
+    <%= column_chart @chart2 %>
+    Month
+  </div>
 </div>
 
+	

@@ -18,8 +18,12 @@
             <%= f.password_field :password_confirmation, class: 'form-control' %>
           </div>
           
-          <%= f.label :tabaco_id %>
-          <%= f.collection_select(:tabaco_id, Tabaco.all, :id, :brand) %>
+          
+          <%= f.label :tabaco_id,class: 'tabaco-name'  %>
+          <div class="brand">
+          <%= f.collection_select(:tabaco_id, Tabaco.all, :id, :brand)  %>
+          </div>
+            
           
          
           
